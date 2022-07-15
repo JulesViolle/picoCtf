@@ -7,6 +7,7 @@ e= 40549272199852960843280049685667549467353215908881755369697226838133820430887
 
 for i in range(10000000):
     m=pow(c,i,n) # c ^ i %n
-    if b'pic' in long_to_bytes(m):
-        print(long_to_bytes(m))
+    ltb=long_to_bytes(m)
+    if b'pic' in ltb :
+        print(ltb)
         break
