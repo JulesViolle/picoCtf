@@ -6,7 +6,7 @@ e=405492721998529608432800496856675494673532159088817553696972268381338204308877
 
 We can see e, if e is large, d will be small and vice versa.
 
-e: large -> d: small
+e: large -> d: small ; 
 e: small(65537) -> d: large
 
 So we can create a loop for brute force attack.
