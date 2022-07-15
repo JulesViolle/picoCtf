@@ -9,5 +9,5 @@ for d in range(10000000):
     m=pow(c,d,n) # c ^ i %n
     ltb=long_to_bytes(m)
     if b'pic' in ltb :
-        print(ltb)
+        print(ltb.decode())
         break
