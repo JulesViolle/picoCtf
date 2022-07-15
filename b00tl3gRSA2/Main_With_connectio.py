@@ -2,7 +2,7 @@ from Crypto.Util.number import long_to_bytes
 
 from pwn import * # pip install pwntools
 
-conn=connect('jupiter.challenges.picoctf.org',57464)
+conn=connect('jupiter.challenges.picoctf.org',45864)
 
 
 c=int(conn.recvuntil(b'\n').decode().strip()[2:])
