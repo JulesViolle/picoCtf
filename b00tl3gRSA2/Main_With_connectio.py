@@ -9,8 +9,9 @@ c=int(conn.recvuntil(b'\n').decode().strip()[2:])
 n=int(conn.recvuntil(b'\n').decode().strip()[2:])
 e=int(conn.recvuntil(b'\n').decode().strip()[2:])
 
-for i in range(10000000):
-    m=pow(c,i,n)
-    if b'pic' in long_to_bytes(m):
-        print(long_to_bytes(m))
+for d in range(10000000):
+    m=pow(c,d,n)
+    ltb=long_to_bytes(m)
+    if b'pic' in ltb:
+        print(ltb)
         break
